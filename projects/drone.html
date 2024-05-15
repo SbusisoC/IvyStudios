@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/webtab icon.png"/>
+    <title>Drone</title>
+
+    <!--font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--css link-->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100,300,400,500,700&display=swap');
+
+:root{
+    --main-color: #777777;
+    --black: #13131a;
+    --bg: #010103;
+    --border:.1rem solid rgba(255,255,255,.3);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition:.2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html:-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+}
+
+body{
+    background: var(--bg);
+}
+
+section{
+    padding:2rem 0%;
+}
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(../images/depart-2.jpg) no-repeat center center fixed;
+    background-size: cover;
+    /*background-position: center;*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home .content{
+    max-width: 200rem;
+    text-align: center;
+    margin-top: -140px;
+}
+
+.home .content h3{
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0.1rem 50.5rem;
+    font-weight: bold;
+    /*margin-left: 32px;*/
+}
+
+.home .content p{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.8;
+}
+
+.info{
+    background-color: #fff;
+    min-height: 60vh;
+    padding: 5rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    margin-top: 100vh; /* Starts below the fixed home section */
+}
+
+.info .heading h1{
+    font-size: 3rem;
+    margin-bottom: 4rem;
+    padding-left: 53rem;
+    
+}
+
+.info .box-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+
+.info .box {
+    background: #fff;
+    padding: 2.5rem;
+    flex: 1;
+    border-radius: 10px;
+    /*box-shadow: 0 4px 8px rgba(0,0,0,0.1);*/
+}
+
+.info .box p1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-left: 4rem;
+}
+
+.info .box p {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    line-height: 1.6;
+    color: var(--main-color);
+}
+
+.footer{
+    text-align: center;
+}
+
+.footer .share{
+    padding:1rem 0;
+}
+
+.footer .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #fff;
+    border:var(--border);
+    margin:.3rem;
+    border-radius: 50%;
+}
+
+.footer .share a:hover{
+    background-color:var(--main-color);
+}
+
+.footer .credit{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: lighter;
+    padding:1.5rem;
+}
+
+.footer .credit span{
+    color:var(--main-color);
+}
+
+
+    </style>
+
+</head>
+<body>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3>Drone Shots for Your Every Need</h3>
+            <p>Perfect For Concerts, Weddings, Conferences,<br>
+                Events, Talk Shows and more!
+            </p>
+
+        </div>
+    </section>
+
+    <section class="info" id="info">
+
+        <div class="heading">
+             <h1>What Can We Do For You</h1>
+        </div>
+
+        <div class="box-container">
+
+            <div class="box">
+                <p1>Small Scale Productions</p1>
+                <p>Corporate, and Internal Communication
+                    Small Chat + Panel Discussions
+                    Webinars.</p>
+            </div>
+
+            <div class="box">
+                <p1>Transmission And Streaming</p1>
+                <p>On-site Encoding Services
+                    Satellite Uplinks and Downlinks
+                    Remote IP Workflows.</p>
+            </div>
+
+            <div class="box">
+                <p1>Full Scale Productions</p1>
+                <p>Offering the full package of a multi camera production.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="footer">
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+        </div>
+
+        <div class="credit">created by <span> Sbu</span> | all rights reserved</div>
+
+    </section>
+</body>
+</html>
